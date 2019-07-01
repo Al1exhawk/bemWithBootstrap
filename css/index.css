@@ -26,9 +26,10 @@ li {
 .menu__item a:hover {
   text-decoration: none;
   color: gray;
+  cursor: pointer;
 }
-
-.header > div {
+/*HEADER*/
+.header {
   color: white;
   text-align: center;
   padding: 180px 0;
@@ -45,25 +46,19 @@ li {
   margin-bottom: 100px;
 }
 .button {
+  text-transform: uppercase;
   padding: 10px 25px;
   margin: 0 10px;
   color: white;
   transition: 0.3s;
-}
-
-.button_empty {
-  background: transparent;
-  border: 2px solid white;
-}
-
-.button_full {
   background-color: #00897b;
   border: 2px solid #00897b;
 }
 
-.button_empty:hover,
-.button_full:hover {
-  background: #02534b;
+.button:hover {
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .about {
@@ -81,8 +76,8 @@ li {
 }
 
 .about__text {
-  font-size: 15px;
   margin-bottom: 110px;
+  font-size: 15px;
   color: #212121;
 }
 
@@ -91,4 +86,90 @@ li {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Open Sans Semibold";
+}
+
+.services {
+  color: black;
+  background: #e4fdf9;
+  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 125px;
+}
+
+.our_card {
+  padding: 50px;
+  background: white;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 56px;
+  color: black;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.button_services {
+  text-transform: uppercase;
+  border: 2px solid black;
+  background: transparent;
+  padding: 10px 15px;
+  font-family: "Open Sans Semibold";
+  transition: 0.3s;
+}
+
+.button_services:hover {
+  cursor: pointer;
+}
+
+.services_title {
+  transition: 0.3s;
+  font-size: 20px;
+  margin-top: 38px;
+  margin-bottom: 25px;
+  color: #212121;
+}
+
+.services_text {
+  transition: 0.3s;
+  font-size: 15px;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.our_card:hover {
+  background: #00897b;
+  transition: 0.3s;
+  box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover .icon,
+.our_card:hover .services_title,
+.our_card:hover .services_text {
+  color: white;
+}
+
+.our_card:hover .button_services {
+  color: white;
+  border: 2px solid white;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+.portfolio button:hover {
+  color: black;
+  border: 2px solid #00897b;
+  background: transparent;
+}
+
+.portfolio img {
+  margin-bottom: 30px;
+}
+
+.filter {
+  padding: 120px 0;
 }
