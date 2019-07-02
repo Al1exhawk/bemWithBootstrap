@@ -160,7 +160,8 @@ li {
   padding-bottom: 135px;
   text-align: center;
 }
-.portfolio button:hover {
+.portfolio button:hover,
+.focused {
   color: black;
   border: 2px solid #00897b;
   background: transparent;
@@ -172,4 +173,93 @@ li {
 
 .filter {
   padding: 120px 0;
+}
+
+.portfolio_text {
+  display: none;
+}
+
+div[filter]:hover img {
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+
+div[filter]:hover .portfolio_text {
+  display: block;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+
+.pricing {
+  background: #f0f1f1;
+  padding: 125px 115px;
+  color: black;
+  text-align: center;
+}
+
+.price {
+  background: #fff;
+  transition: 0.3s;
+}
+.price:hover {
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price__head {
+  color: white;
+  background-image: url(../images/PriceList.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 65px;
+  max-height: 211px;
+  font-size: 50px;
+}
+
+.price__head p {
+  font-size: 25px;
+}
+
+.price__head sup {
+  font-size: 25px;
+  vertical-align: middle;
+}
+.price__head sub {
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+.price__body {
+  font-style: 17px;
+  color: #212121;
+}
+.price__body ul li {
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 12px;
+  max-width: 175px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.price__footer {
+  padding: 60px 0;
+}
+
+.price__footer button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 30px;
+  color: #212121;
+  background: transparent;
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+
+.price__footer button:hover {
+  text-transform: uppercase;
+  color: white;
+  background: #00897b;
 }
